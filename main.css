@@ -1,0 +1,70 @@
+body {
+  background-color: red;
+  transition: background-color 1s;
+  margin: 60px;
+}
+
+th {
+  color: white;
+}
+
+header {
+  margin: .5vw;
+  font-size: 0;
+  display: -ms-flexbox;
+  -ms-flexbox-wrap: wrap;
+  -ms-flexbox-direction: column;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  display: webkit-box;
+  display: flex;
+}
+
+header div {
+  -webkit-box-flex: auto;
+  ims-flex: auto;
+  flex: auto;
+  width: 200px;
+  margin: .5vw;
+}
+
+header div img {
+  width: 100%;
+  height: auto;
+  border: 1px solid white;
+}
+
+@media screen and (max-width: 400px) {
+  header div {
+    margin: 0;
+  }
+
+  header {
+    padding: 0;
+  }
+}
+
+h1 {
+  font-weight: bold;
+  color: white;
+  font-size: 32px;
+}
+
+td {
+  color: white;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+marquee {
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+}
+
+p {
+  color: white;
+}

@@ -1,0 +1,48 @@
+<html>
+   <head>
+      <title>Create a User</title>
+      <style>
+         body {
+             background-color: red;
+             transition: background-color 4s;
+             margin: 40px;
+         }
+         h3 {
+             color: white;
+         }
+         
+         marquee {
+             color: white;
+         }
+         
+      </style>
+   </head>
+   <body>
+      <form action="userNames.php" method="post">
+         <h3>First Name:</h3>
+         <input type = "text" name = "firstname">
+         <h3>Last Name:</h3>
+         <input type = "text" name = "lastname">
+         <br><br>
+         <input type="submit" value="Submit">
+      </form>
+      
+      <marquee>
+          Welcome to Bertram's super secret spooky time club.
+      </marquee>
+     
+      <script type=" text/javascript">
+         var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+         var i = 1;
+         window.setInterval(function() {
+             document.body.style.backgroundColor = colors[i];
+             i++;
+             if (i === colors.length) {
+               i = 0;
+             }
+           },
+           2000);
+      </script>
+   </body>
+</html>
+

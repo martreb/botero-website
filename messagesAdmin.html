@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>Secure Login</title>
+  </head>
+	
+	<style>
+		marquee {
+			color: white;
+		}
+		
+		body {
+  background-color: red;
+  transition: background-color 1s;
+  margin: 60px;
+  
+  h2 {
+	color: white; 
+  }
+  
+  h3 {
+	color: white; 
+  }
+}
+	</style>
+  <body>
+    <h2>Login to view messages.</h2>
+    <h3>Username:</h3>
+    <form action="messagesAdmin.php" method="post">
+    <input type="text" name="username">
+    <h3>Password:</h3>
+    <input type="password" name="password">
+    <br><br>
+    <input type="submit" value="Login">
+	
+	<marquee>Welcome to Bertram's secret club.</marquee>
+	
+	<script type=" text/javascript">
+      var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
+      var i = 1;
+      window.setInterval(function() {
+          document.body.style.backgroundColor = colors[i];
+          i++;
+          if (i === colors.length) {
+            i = 0;
+          }
+        },
+        300);
+    </script>
+	
+    </form>
+  </body>
+</html>
